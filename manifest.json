@@ -3,8 +3,9 @@
     "name": "Have a break, Have a Culture Kitty-Kat",
     "description": "Pop Up that allows for a break, with tech info",
     "version": "1.0",
-    "action": {
+        "action": {
       "default_popup": "break.html",
       "default_icon": "images/break_extensions.png"
     }
-  }
+
+}

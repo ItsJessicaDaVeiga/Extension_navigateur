@@ -1,15 +1,53 @@
-h1{
-    color: palevioletred;
-    font-size: 4vh;
+body {
+    width: 300px;
+}
+@font-face {
+    font-family: 'Super Dream';
+    src: url('Super\ Dream.ttf') format('truetype');
+}
+
+.mainContainer{
     display: flex;
-    
-    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black
 }
 
-.popup {
-width: 80%; 
-height: 60vh;
+#textContainer {
+    color: palevioletred;
+    text-align: center;
+    font-size: medium;
+    font-weight: 300;
+    font-family:  'Super Dream', sans-serif ;
+}
+
+#citationContainer{
+
+    color: rgb(189, 101, 130);
+    border-radius: 8px;
+    margin: 10px auto;
+    padding: 40px 40px;
+    box-shadow: inset 0px 5px 20px palevioletred;
+    font-family: 'Super Dream', sans-serif;
+    font-size: 18;
+    font-weight: 700;
+    text-align: center;
+    max-width: 200px;
+    line-height: 30px;
+}
+
+#infoContainer{
+
+   
+    border: 2px solid blueviolet;
+    margin: 10px; 
+    padding: 5px;
+
 
 
 }
 
+.child{
+
+}
