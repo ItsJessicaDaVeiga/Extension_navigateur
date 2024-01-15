@@ -1,53 +1,72 @@
 body {
-    width: 300px;
+  width: 300px;
 }
 @font-face {
-    font-family: 'Super Dream';
-    src: url('Super\ Dream.ttf') format('truetype');
+  font-family: "Super Dream";
+  src: url("Super\ Dream.ttf") format("truetype");
 }
 
-.mainContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid black
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
 }
 
 #textContainer {
-    color: palevioletred;
-    text-align: center;
-    font-size: medium;
-    font-weight: 300;
-    font-family:  'Super Dream', sans-serif ;
+  color: palevioletred;
+  text-align: center;
+  font-size: medium;
+  font-weight: 300;
+  font-family: "Super Dream", sans-serif;
 }
 
-#citationContainer{
-
-    color: rgb(189, 101, 130);
-    border-radius: 8px;
-    margin: 10px auto;
-    padding: 40px 40px;
-    box-shadow: inset 0px 5px 20px palevioletred;
-    font-family: 'Super Dream', sans-serif;
-    font-size: 18;
-    font-weight: 700;
-    text-align: center;
-    max-width: 200px;
-    line-height: 30px;
+#citationContainer {
+  color: rgb(189, 101, 130);
+  border-radius: 8px;
+  margin: 10px auto;
+  padding: 40px 40px;
+  box-shadow: inset 0px 5px 20px palevioletred;
+  font-family: "Super Dream", sans-serif;
+  font-size: 18;
+  font-weight: 700;
+  text-align: center;
+  max-width: 200px;
+  line-height: 30px;
 }
 
-#infoContainer{
-
-   
-    border: 2px solid blueviolet;
-    margin: 10px; 
-    padding: 5px;
-
-
-
+#infoContainer {
+  border: 2px solid blueviolet;
+  margin: 10px;
+  padding: 5px;
 }
 
-.child{
 
+
+
+/* pour minuteur */
+
+button {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+}
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+#timer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 11rem;
+}
+#Arrow {
+    display: grid;
 }
