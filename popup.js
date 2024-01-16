@@ -125,25 +125,45 @@ downArrow.forEach(function (arrow) {
   });
 });
 
-startButton.addEventListener("click", decompte);
+startButton.addEventListener("click", function (event) {
+  if (startButton.textContent === "start") {
+    chrome.runtime.sendMessage({ action: [timerElement.textContent] });
+    startButton.textContent = "stop";
+  } else {
+    chrome.runtime.sendMessage({ action: "stop" });
+    startButton.textContent = "start";
+  }
+});
 
-document.addEventListener("DOMContentLoaded", function() {
+chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
+  if (request.action) {
+    startButton.textContent = "stop";
+    const temps = request.action;
+    let minutes = Math.floor(temps / 60);
+    let secondes = temps % 60;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    secondes = secondes < 10 ? "0" + secondes : secondes;
+    timerElement.textContent = `${minutes} : ${secondes}`;
+  }
+});
 
-  const songLibrary= [
+//musique
 
+document.addEventListener("DOMContentLoaded", function () {
+  const songLibrary = [
     "songs/song1.mp3",
     "songs/song2.mp3",
     "songs/song3.mp3",
     "songs/song4.mp3",
     "songs/song5.mp3",
-  ]
-  const audioPlayer= document.getElementById("myAudio");
+  ];
+  const audioPlayer = document.getElementById("myAudio");
 
-  const randomIndex= Math.floor(Math.random() * songLibrary.length);
+  const randomIndex = Math.floor(Math.random() * songLibrary.length);
 
   const songPath = songLibrary[randomIndex];
 
-  audioPlayer.src= songPath
+  audioPlayer.src = songPath;
 
-  audioPlayer.play()
-})
+  audioPlayer.play();
+});
