@@ -10,22 +10,31 @@
     <link href="style.css" rel="stylesheet" />
 
     <div class="mainContainer">
+        
+
+        <h1 id="textContainer">Time for a break!</h1>
+        
         <div id="timer">
-            <div id="Arrow">
-              <button class="up"></button>
-              <button class="down"></button>
-            </div>
-            <div id="number">15 : 00</div>
-            <div id="Arrow">
-              <button class="up"></button>
-              <button class="down"></button>
-            </div>
-            <button id="startButton">start</button>
+          <div class="Arrow">
+            <button class="up"></button>
+            <button class="down"></button>
           </div>
-        <h1 class="child" id="textContainer">Time for a break!</h1>
+          <div id="number">15 : 00</div>
+          <div class="Arrow">
+            <button class="up"></button>
+            <button class="down"></button>
+          </div>
+          <button id="startButton">start</button>
+        </div>
         <img id="imageContainer" src="" alt="Image">
+
         <div id="citationContainer"></div></span>
-        <div id="infoContainer">Random Facts About Technology</div>
+
+      
+      <!-- <button onclick="playRandomMusic()">Lancer la musique aléatoire</button> -->
+      <audio id="myAudio" controls autoplay>
+          <!-- La source audio sera définie dynamiquement via JavaScript -->
+      </audio>
 
     </div>
 

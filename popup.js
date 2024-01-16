@@ -126,3 +126,24 @@ downArrow.forEach(function (arrow) {
 });
 
 startButton.addEventListener("click", decompte);
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  const songLibrary= [
+
+    "songs/song1.mp3",
+    "songs/song2.mp3",
+    "songs/song3.mp3",
+    "songs/song4.mp3",
+    "songs/song5.mp3",
+  ]
+  const audioPlayer= document.getElementById("myAudio");
+
+  const randomIndex= Math.floor(Math.random() * songLibrary.length);
+
+  const songPath = songLibrary[randomIndex];
+
+  audioPlayer.src= songPath
+
+  audioPlayer.play()
+})
