@@ -1,5 +1,4 @@
 markdown
-
 # Have a Break, Have a kitty cat - Extension de navigateur
 
 ## Description
@@ -35,6 +34,6 @@ Une fois installée, l'extension fonctionnera automatiquement. Lorsque vous pass
 ## Contribution et Contact
 
 Ce projet a été réalisé en collaboration par trois personnes :
-- Amélie [https://github.com/AmelieMariaM]
-- Zackary [https://github.com/maxlebro]
-- Jessica [https://github.com/ItsJessicaDaVeiga]
+- Amélie: https://github.com/AmelieMariaM
+- Zackary: https://github.com/maxlebro
+- Jessica: https://github.com/ItsJessicaDaVeiga
